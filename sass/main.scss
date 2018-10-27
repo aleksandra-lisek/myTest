@@ -12,7 +12,53 @@ body{
     max-width:1170px;
 }
 
+figure{
+    margin: 0;
+}
 
+// section1
+
+// navigation
+
+.top-navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.top-navigation__links{
+    display: flex;
+    justify-content: space-between;
+    width: 729px;
+    list-style-type: none;
+    text-transform: uppercase;
+    li{
+        a{
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            color: $text-color-lighter;
+        }
+    }
+
+    li:hover a{
+        color: $active-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e74c3c;
+        padding-bottom: 22px;
+    }
+
+}
+
+
+
+.slider1{
+    background-image: url(../images/background1_desktop.png);
+}
+.sec1__slider{
+
+}
+
+// section2
 .sec2{
     display: flex;
     justify-content: space-between;
