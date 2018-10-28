@@ -1,14 +1,25 @@
 @import "variables";
+@import "mixins";
 @import "navigation";
 @import "sec1";
 @import "sec2";
 @import "slider";
 
+
+@function get-vw($target) { 
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+  }
+
+  $container-width:1170px;
+  $container-margin:((100vw - get-vw($container-width))/2)*-1;
+
 body{
     margin:0;
 }
 .container{
-    max-width:1170px;
+    max-width:$container-width;
+    margin:0 $container-margin;
 }
 
 figure{
