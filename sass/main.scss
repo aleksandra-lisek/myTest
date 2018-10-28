@@ -1,10 +1,8 @@
-// colors
-$active-color:#e74c3c;
-$text-color-lighter:#f4f5f9;
-$text-color-light:#cbc6c0;
-$text-color-dark: #999;
-$text-color-darker:#6a6a6a;
-// 
+@import "variables";
+@import "navigation";
+@import "sec1";
+@import "sec2";
+
 body{
     margin:0;
 }
@@ -14,119 +12,4 @@ body{
 
 figure{
     margin: 0;
-}
-
-// section1
-
-// navigation
-
-.top-navigation{
-    display: flex;
-    justify-content: space-between;
-}
-.top-navigation__links{
-    display: flex;
-    justify-content: space-between;
-    width: 729px;
-    list-style-type: none;
-    text-transform: uppercase;
-    li{
-        a{
-            font-family: "Open Sans";
-            font-size: 14px;
-            font-weight: 400;
-            text-decoration: none;
-            color: $text-color-lighter;
-        }
-    }
-
-    li:hover a{
-        color: $active-color;
-        font-weight: 700;
-        border-bottom: 1px solid #e74c3c;
-        padding-bottom: 22px;
-    }
-
-}
-
-
-
-.slider1{
-    background-image: url(../images/background1_desktop.png);
-}
-.sec1__slider{
-
-}
-
-// section2
-.sec2{
-    display: flex;
-    justify-content: space-between;
-}
-.sec2__item{
-    width: 247px;
-    height: 20rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sec2__item:hover{
-    .item__logo{
-        width: 89px !important;
-        height: 89px !important;
-        border-color: $active-color !important;
-        transform: rotate(45deg);
-        img{
-            transform: rotate(-45deg);
-        }
-    }
-
-    .item__headline{
-        color: $active-color !important; 
-    }
-}
-
-.item__logo{
-    width: 78px;
-    height: 78px;
-    border: 1px solid $text-color-dark;
-    opacity: 0.25;
-    margin: 0 87px 30px 87px;
-    position: relative;
-
-    img{
-    position: absolute;
-    margin: auto;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    }
-}
-
-.item__text{
-    text-align: center;
-    .item__headline{
-        color:$text-color-darker;
-        font-family: "Open Sans - Semibold", sans-serif;;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1.35px;
-    }
-    .item__deco{
-        width: 41px;
-        height: 2px;
-        border-bottom: 3px solid $text-color-darker;
-        margin: 19px 103px 17px 103px;
-    }
-    .item__paragraph{
-        color: $text-color-dark;
-        font-family: "Source Sans Pro";
-        font-size: 12px;
-        // font-weight: bold;
-        line-height: 20px;
-        letter-spacing: 0.9px;
-    }
 }

@@ -1,0 +1,29 @@
+.top-navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top:40px;
+}
+.top-navigation__links{
+    display: flex;
+    justify-content: space-between;
+    width: 729px;
+    list-style-type: none;
+    text-transform: uppercase;
+    li{
+        a{
+            font-family: "Open Sans";
+            font-size: 14px;
+            font-weight: 400;
+            text-decoration: none;
+            color: $text-color-lighter;
+        }
+    }
+
+    li:hover a{
+        color: $active-color;
+        font-weight: 700;
+        border-bottom: 1px solid #e74c3c;
+        padding-bottom: 22px;
+    }
+
+}
