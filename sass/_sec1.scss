@@ -8,6 +8,18 @@
 
 }
 .slider1{
+    background-image: url(../images/background3_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider2{
+    background-image: url(../images/background2_desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.slider3{
     background-image: url(../images/background1_desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +27,7 @@
 }
 .sec1__slider{
     height: 990px;
-
+    display: none;
     .sec1__paragraph{
         width: 580px;
         height: 62px;
