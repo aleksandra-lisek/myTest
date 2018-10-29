@@ -1,4 +1,3 @@
-
 .sec1{
     display: flex;
     flex-direction: column;
@@ -8,12 +7,18 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top:233px !important;
+    margin-top:-$nav-hight-desktop !important;
+    padding-top:$nav-hight-desktop + 233px !important;
 
     @include mobile{
-        margin-top:60px !important;
+        margin-top:-$nav-hight-mobile !important;
+        padding-top: $nav-hight-mobile + 60px !important;
     }
 
+}
+
+.sec1__content--hamburger{
+    margin-top:-($nav-hight-mobile+500) !important;
 }
 .slider1{
     background-image: url(../images/background3_desktop.png);
@@ -93,6 +98,10 @@
         font-size: 3em;
         letter-spacing: 5px;
     }
+
+    @include small-mobile{
+        font-size: 2.5em;
+    }
 }
 
 .btn__box{
@@ -105,8 +114,6 @@
         .btn:nth-of-type(2){
             display: none;
         }
-        // width: 225px;
-        // height: 56px;
         
     }
         
@@ -121,8 +128,6 @@
     border-radius: 1px;
     cursor: pointer;
     @include mobile{
-        // width: 225px;
-        // height: 56px;
         padding: (56px-19px)/2 0;
         
     }
