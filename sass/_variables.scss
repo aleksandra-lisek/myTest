@@ -1,5 +1,16 @@
+@function get-vw($target) { 
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+  }
+
 $active-color:#e74c3c;
 $text-color-lighter:#f4f5f9;
 $text-color-light:#cbc6c0;
 $text-color-dark: #999;
 $text-color-darker:#6a6a6a;
+
+$container-width:1170px;
+$container-width-mobile:290px;
+$container-margin:((100vw - get-vw($container-width))/2)*-1;
+$container-margin-mobile:((100vw - get-vw($container-width-mobile))/4);
+$sec1-height:990px;

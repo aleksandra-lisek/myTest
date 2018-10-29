@@ -1,3 +1,8 @@
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
 .sec1__content{
     height: 100%;
     display: flex;
@@ -5,6 +10,9 @@
     text-align: center;
     margin-top:233px !important;
 
+    @include mobile{
+        margin-top:60px !important;
+    }
 
 }
 .slider1{
@@ -25,9 +33,15 @@
     background-size: cover;
     background-position: center;
 }
+
+
 .sec1__slider{
-    height: 990px;
+    height: $sec1-height;
     display: none;
+
+    @include mobile(){
+        height: 600px;
+    }
     .sec1__paragraph{
         width: 580px;
         height: 62px;
@@ -38,6 +52,17 @@
         line-height: 24px;
         align-self: center;
         padding-bottom:70px;
+
+        @include mobile(){
+            width: $container-width-mobile;
+            padding-bottom:0;
+        }
+
+        span{
+            @include mobile(){
+                display: none;
+            }
+        }
     }
 }
 
@@ -48,6 +73,11 @@
     font-weight: 400;
     letter-spacing: 1.2px;
     margin: 0 0 45px 0;
+
+
+    @include mobile {
+        margin: 0 0 16px 0;
+    }
 }
 
 .sec1__headline{
@@ -58,12 +88,29 @@
     text-transform: uppercase;
     letter-spacing: 7.2px;
     margin: 0;
+    
+    @include mobile{
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
 }
 
 .btn__box{
     display:flex;
     align-self: center;
+
+    
 }
+@include mobile{
+        .btn:nth-of-type(2){
+            display: none;
+        }
+        // width: 225px;
+        // height: 56px;
+        
+    }
+        
+
 .btn{
     width: 225px;
     border: 1px solid #ffffff;
@@ -73,6 +120,13 @@
     padding: 22px 0;
     border-radius: 1px;
     cursor: pointer;
+    @include mobile{
+        // width: 225px;
+        // height: 56px;
+        padding: (56px-19px)/2 0;
+        
+    }
+
 
     a{
         color: #ffffff;

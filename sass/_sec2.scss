@@ -1,7 +1,11 @@
 .sec2{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top:123px;
+    @include mobile{
+        flex-direction: column;
+    }
 }
 .sec2__item{
     width: 247px;
@@ -9,6 +13,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+   
 }
 
 .sec2__item:hover{
