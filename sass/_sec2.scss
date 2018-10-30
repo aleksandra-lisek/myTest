@@ -3,9 +3,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top:123px;
+    padding-bottom:110px;
     @include mobile{
         flex-direction: column;
         padding-top:0px;
+        padding-bottom:50px;
     }
 }
 .sec2__item{

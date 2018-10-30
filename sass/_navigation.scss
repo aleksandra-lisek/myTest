@@ -15,6 +15,10 @@
     background-color: rgba(0,0,0,0.2);
     margin: 0 !important;
     padding: 10px 8.5vw;
+
+    @include mobile{
+        padding: 10px 0;
+    }
 }
 .top-navigation__links{
     display: flex;
@@ -42,4 +46,10 @@
         padding-bottom: 22px;
     }
 
+}
+
+.navigation__logo{
+    @include mobile{
+        margin-left: (100vw - (get-vw(105px)+get-vw(113px)))/2 !important;
+    }
 }

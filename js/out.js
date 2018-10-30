@@ -59,6 +59,8 @@ getVisible(list, dotsList);
    });
 });
 
+    
+
 
 //hamburger
 

@@ -28,6 +28,10 @@
     border:0;
     text-indent:-999px;
     overflow:hidden;
+
+    @include mobile{
+        top: 50%;
+    }
 }
 
 .slider-button-next {
