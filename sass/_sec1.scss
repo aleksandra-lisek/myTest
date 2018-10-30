@@ -25,18 +25,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @include mobile{
+        background-image: url(../images/background1_mobile.png);
+    }
 }
 .slider2{
     background-image: url(../images/background2_desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include mobile{
+        background-image: url(../images/background2_mobile.png);
+    }
 }
 .slider3{
     background-image: url(../images/background1_desktop.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include mobile{
+        background-image: url(../images/background3_mobile.png);
+    }
 }
 
 
@@ -71,6 +81,31 @@
     }
 }
 
+.sec1__deco{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 0;
+    
+    @include mobile{
+        margin: 0;
+    }
+}
+.deco__line{
+    width: 80px;
+    height: 1px;
+    background-color:#f1ebe7;
+}
+
+.deco__dot{
+    width: 8px;
+    height: 7px;
+    background-color: #e74c3c;
+    border-radius: 100%; 
+    margin: 0 13px;
+    
+}
+
 .sec1__subheadline{
     color:$text-color-lighter;
     font-family: "Source Sans Pro";
@@ -101,6 +136,7 @@
 
     @include small-mobile{
         font-size: 2.5em;
+        align-self: center;
     }
 }
 

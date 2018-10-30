@@ -31,4 +31,7 @@ nav.container{
 
 figure{
     margin: 0;
+    @include mobile{
+        margin: 0;
+    }
 }
